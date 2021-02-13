@@ -1,6 +1,4 @@
 
-        
-
         html, body{
           top:0;
           bottom:0;
@@ -8,6 +6,7 @@
           right:0;
           margin: 0;
           padding: 0;
+          font-family: 'Raleway', sans-serif;
          }
   
           
@@ -35,7 +34,6 @@
           nav > ul > li > a{
           color: rgb(153,238,219);
           display: block;
-          line-height: ;
           padding: 14px 16px;
           text-decoration: none;
           font-family: impact;
@@ -44,7 +42,7 @@
           .logo-img{
           float: left;
           position: relative;
-          margin: 10px 15px 15px 10px;
+          margin-bottom: 10px;
           }
               
           li a:hover{
@@ -61,7 +59,7 @@
           
                   
           .hero-image {
-          background-image:url(https://www.hawk-hill.com/wp-content/uploads/2019/01/idpad_vs_surface_illustration_01.jpg.webp);
+          background-image:url(https://www.lovethegarden.com/sites/default/files/styles/header_image_xl/public/content/articles/UK_advice-gardening-houseplants-how-look-after-cactus_header.jpg?itok=YZTfZTBD);
           height: 400px;
           background-position: center;
           background-repeat: no-repeat;
@@ -81,4 +79,95 @@
           color: white;
           font-family: impact;
           text-shadow: 1px 1px 2px teal, 0 0 25px BLACK, 0 0 5px rgb(179,179, 184);
+          }
+
+        
+            
+          /* Create three equal columns that floats next to each other */
+          .column {
+          float: left;
+          width: 30%;
+          margin-left: 15px;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          padding: 10px;
+          height: 400px; /* Should be removed. Only for demonstration */
+          }
+            
+          /* Clear floats after the columns */
+          .row:after {
+          content: "";
+          display: table;
+          clear: both;
+          }
+          
+          .button {
+          border-radius: 4px;
+          border: none;
+          color: white;
+          padding: 10px 20px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 13px;
+          transition-duration: 0.4s;
+          cursor: pointer;
+          }
+
+          .button2 {
+          box-shadow: 5px 10px 8px #131212;
+          background-color: white; 
+          color: black; 
+          border: 2px solid #008CBA;
+          }
+          
+          .button2:hover {
+          background-color: #008CBA;
+          color: white;
+          }
+          
+
+          .fa {
+          padding: 10px;
+          font-size: 20px;
+          width: 15px;
+          text-align: center;
+          text-decoration: none;
+          margin: 5px 2px;
+          border-radius: 30%;
+
+          }
+            
+          .fa:hover {
+          opacity: 0.7;
+          color: black;
+            }
+            
+          .fa-facebook {
+          background: rgb(153,238,219);
+          color: white;
+          }
+            
+          .fa-youtube {
+          background: rgb(153,238,219);
+          color: white;
+          }
+            
+          .fa-instagram {
+          background: rgb(153,238,219);
+          color: white;
+          }
+        
+
+          #footer{
+          float: left;
+          margin-top: 10px;
+          height: 60px;
+          overflow:hidden;
+          padding-top: 40px;
+          text-align: center;
+          width: 100%;
+          color: rgb(153,238,219);
+          background-color: black;
+          z-index: 999;
           }
