@@ -91,9 +91,13 @@
           margin-top: 20px;
           margin-bottom: 20px;
           padding: 10px;
-          height: 400px; /* Should be removed. Only for demonstration */
+        
           }
-            
+          
+          div.column img{
+            width: 100%;
+            height: auto;
+          }
           /* Clear floats after the columns */
           .row:after {
           content: "";
@@ -124,8 +128,10 @@
           .button2:hover {
           background-color: #008CBA;
           color: white;
+          position: ;
           }
           
+        
 
           .fa {
           padding: 10px;
@@ -159,13 +165,20 @@
           }
         
 
+          h3{
+          text-align: center;
+        }
+        
+        .copy{
+          text-align: center;
+        }
           #footer{
-          float: left;
+          float: right;
           margin-top: 10px;
-          height: 60px;
+          height: 80px;
           overflow:hidden;
           padding-top: 40px;
-          text-align: center;
+          text-align:right;
           width: 100%;
           color: rgb(153,238,219);
           background-color: black;
