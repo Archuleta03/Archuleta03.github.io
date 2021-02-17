@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 
         html, body{
           top:0;
@@ -19,7 +22,7 @@
           width: 100%;
           background-color: black;
           z-index: 999;
-          position: fixed;
+          margin-bottom: 60px;
           }
           
           nav ul{
@@ -66,7 +69,6 @@
           background-repeat: no-repeat;
           background-size: cover;
           position: relative;
-          margin-bottom: 20px;
           
           }
         
@@ -82,112 +84,151 @@
           text-shadow: 1px 1px 2px rgb(42, 64, 90), 0 0 25px BLACK, 0 0 5px rgb(179,179, 184);
           }
 
-         
+  /*body*/
+  /* Create two unequal columns that floats next to each other */
+/* Left column */
 
-            
-          /* Create three equal columns that floats next to each other */
-            
-         .column {
-          justify-content: center;
-          align-items: flex-start;
-          float: left;
-          width: 30%;
-          margin-left: 20px;
-          margin-top: 20px;
-          margin-bottom: 20px;
-          padding: 10px;
-          text-align: center;
-          }
-          
-          div.column img{
-            width: 100%;
-            height: auto;
-          }
-          /* Clear floats after the columns */
-          .row:after {
-          display: table;
-          clear: both;
-          }
-          
-          .button {
-          border-radius: 4px;
-          border: none;
-          color: white;
-          padding: 10px 20px;
-          text-align: center;
-          text-decoration: none;
-          display: inline-block;
-          font-size: 13px;
-          transition-duration: 0.4s;
-          cursor: pointer;
-          }
+.buy{
+  float:left;
+}
 
-          .button2 {
-          box-shadow: 5px 10px 8px #131212;
-          background-color: white; 
-          color: black; 
-          border: 2px solid #008CBA;
-          }
-          
-          .button2:hover {
-          background-color: #008CBA;
-          color: white;
-          }
+/*video*/
+.iframe{
+  float:left;
+  margin-right: 65px;
+  
+}
 
-        /*bundles*/
-        div.gallery {
-          border: 5px solid #ccc;
-        }
-        
-        div.gallery:hover {
-          border: 1px solid #777;
-        }
-        
-        div.gallery img {
-          width: 100%;
-          height: auto;
-        }
-        
-        div.desc {
-          padding: 15px;
-          text-align: center;
-        }
-        
-        
-        .responsive {
-          padding: 0 6px;
-          float: left;
-          width: 24.99999%;
-        }
-        
-        @media only screen and (max-width: 700px) {
-          .responsive {
-            width: 49.99999%;
-            margin: 6px 0;
-          }
-        }
-        
-        @media only screen and (max-width: 500px) {
-          .responsive {
-            width: 100%;
-          }
-        }
-        
+/*shop button*/
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  margin-left: 20px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+/*subscribe form*/
+form {
+  border: 3px solid #f1f1f1;
+  font-family: Arial;
+}
+
+.container {
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+
+input[type=text], input[type=submit] {
+  width: 150px;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type=checkbox] {
+  margin-top: 16px;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid rgb(55, 73, 75);
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+/*left coloumn*/
+.leftcolumn {   
+  float: left;
+  width: 75%;
+  font-size: 20px;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f:rgb(198,195,185);
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: rgb(55, 73, 75);
+  width: 100%;
+  padding: 20px;
+  color: white;
+  border: 4px solid white;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: :rgb(198,195,185);
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+
+  /* footer*/
         .clearfix:after {
           content: "";
           display: table;
           clear: both;
         }
           
-        
-
-          .fa {
+        .fa {
           padding: 10px;
           font-size: 20px;
-          width: 15px;
+          width: 35px;
           text-align: center;
           text-decoration: none;
-          margin: 5px 2px;
+          margin-bottom: 10px;
           border-radius: 30%;
 
           }
@@ -223,7 +264,7 @@
           #footer{
           float: right;
           margin-top: 10px;
-          height: 80px;
+          height: 95px;
           overflow:hidden;
           padding-top: 40px;
           text-align:right;
