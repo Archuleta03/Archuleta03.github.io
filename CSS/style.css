@@ -139,9 +139,16 @@ input[type=checkbox] {
 }
 
 input[type=submit] {
-  background-color: #4CAF50;
+  background-color: black;
   color: white;
+  padding: 12px 20px;
   border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: impact;
+  box-shadow: 5px 10px 8px #131212;
+  border: double;
+  }
 }
 
 input[type=submit]:hover {
@@ -149,9 +156,17 @@ input[type=submit]:hover {
 }
 
 .button2 {
-  background-color: white; 
+  ba background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: impact;
+  box-shadow: 5px 10px 8px #131212;
+  border: double;ckground-color: white; 
   color: black; 
-  border: 2px solid rgb(55, 73, 75);
+  border: 2px solid black;
 }
 
 .button2:hover {
@@ -175,14 +190,33 @@ input[type=submit]:hover {
   margin-bottom: 20px;
 }
 
-/* Fake image */
+/* top left*/
 .fakeimg {
+  background-color:  black;
+  width: 100%;
+  padding: 20px;
+  color: white;
+  border: 4px solid white;
+}
+
+/*bottom left*/
+.fakeimg3 {
+  background-color:black;
+  width: 100%;
+  padding: 20px;
+  color: white;
+  border: 4px solid white;
+}
+
+/*top bottom right*/
+.fakeimg2 {
   background-color: rgb(55, 73, 75);
   width: 100%;
   padding: 20px;
   color: white;
   border: 4px solid white;
 }
+
 
 /* Add a card effect for articles */
 .card {
